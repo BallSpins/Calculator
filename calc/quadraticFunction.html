@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>quadraticFunction</title>
+    <style>
+    </style>
+</head>
+<body>
+    <a class="btn btn-primary m-2" href="../index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16"><path fill="white" fillRule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"></path></svg>
+    </a>
+
+    <div class="rounded h-75 w-25 d-flex justify-content-center align-items-center container flex-column" style="background-color: aquamarine; margin-top: 15%;">
+        <div class="input-group m-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Quadratic</span>
+            </div>
+            <input type="text" id="a" class="form-control" size="3" value="">
+            <input type="text" id="b" class="form-control" size="3" value="">
+            <input type="text" id="c" class="form-control" size="3" value="">
+        </div>
+
+        <div class="d-flex">
+            <button type="button" id="calc" class="btn btn-primary m-2">Calc</button>
+            <button type="button" id="delete" class="btn btn-danger m-2">Delete</button>
+        </div>
+
+        <div class="flex-column">
+            <p>root 1: <span id="root1">0</span></p>
+            <p>root 2: <span id="root2">0</span></p>
+            <p>X intercepts: x1: <span id="X1">0</span>, x2: <span id="X2">0</span></p>
+            <p>Y intercept: <span id="Y">0</span></p>
+            <p>Axis of Symmetry: <span id="symmetry">0</span></p>
+            <p>Vertex: <span id="vertex">0</span></p>
+        </div>
+
+    </div>
+
+    <script src="../scripts/quadraticFunction.js"></script>
+</body>
+</html>
