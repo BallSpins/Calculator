@@ -9,8 +9,8 @@ document.getElementById("calc").onclick = () => {
     let [a, b, c] = arr;
 
     let discriminant = b**2 - 4*a*c;
-    let root1 = (-b + Math.sqrt(discriminant)) / (2*a);
-    let root2 = (-b - Math.sqrt(discriminant)) / (2*a);
+    let root1 = Number((-b + Math.sqrt(discriminant)) / (2*a));
+    let root2 = Number((-b - Math.sqrt(discriminant)) / (2*a));
 
     // Menentukan titik potong sumbu X dan sumbu Y
     let xIntercepts = [root1, root2];
